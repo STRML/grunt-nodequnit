@@ -119,6 +119,7 @@ module.exports = function(grunt) {
     qunit.run(options, function(err, result) {
       if (err) {
         // If there was an error, abort the series.
+        grunt.log.error(err);
         return done(false);
       }
 
